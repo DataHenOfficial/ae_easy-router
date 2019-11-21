@@ -1,4 +1,4 @@
-module AeEasy
+module DhEasy
   module Router
     module Test
       module SeederBase
@@ -18,17 +18,17 @@ module AeEasy
         end
 
         def initialize opts = {}
-          AeEasy::Router::Test::SeederBase.mock_data[class_name] ||= {}
-          AeEasy::Router::Test::SeederBase.mock_data[class_name][:init_opts] = opts
+          DhEasy::Router::Test::SeederBase.mock_data[class_name] ||= {}
+          DhEasy::Router::Test::SeederBase.mock_data[class_name][:init_opts] = opts
         end
 
         def seed
-          AeEasy::Router::Test::SeederBase.mock_data[class_name][:seed] = true
+          DhEasy::Router::Test::SeederBase.mock_data[class_name][:seed] = true
         end
       end
 
       class SeederA
-        include AeEasy::Router::Test::SeederBase
+        include DhEasy::Router::Test::SeederBase
 
         def class_name
           self.class.name
@@ -36,7 +36,7 @@ module AeEasy
       end
 
       class SeederB
-        include AeEasy::Router::Test::SeederBase
+        include DhEasy::Router::Test::SeederBase
 
         def class_name
           self.class.name

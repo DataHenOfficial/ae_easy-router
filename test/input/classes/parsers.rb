@@ -1,4 +1,4 @@
-module AeEasy
+module DhEasy
   module Router
     module Test
       module ParserBase
@@ -18,17 +18,17 @@ module AeEasy
         end
 
         def initialize opts = {}
-          AeEasy::Router::Test::ParserBase.mock_data[class_name] ||= {}
-          AeEasy::Router::Test::ParserBase.mock_data[class_name][:init_opts] = opts
+          DhEasy::Router::Test::ParserBase.mock_data[class_name] ||= {}
+          DhEasy::Router::Test::ParserBase.mock_data[class_name][:init_opts] = opts
         end
 
         def parse
-          AeEasy::Router::Test::ParserBase.mock_data[class_name][:parse] = true
+          DhEasy::Router::Test::ParserBase.mock_data[class_name][:parse] = true
         end
       end
 
       class ParserA
-        include AeEasy::Router::Test::ParserBase
+        include DhEasy::Router::Test::ParserBase
 
         def class_name
           self.class.name
@@ -36,7 +36,7 @@ module AeEasy
       end
 
       class ParserB
-        include AeEasy::Router::Test::ParserBase
+        include DhEasy::Router::Test::ParserBase
 
         def class_name
           self.class.name

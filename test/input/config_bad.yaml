@@ -3,14 +3,14 @@ router:
   parser:
     routes:
       - page_type: type_a
-        class: AeEasy::Router::Test::ParserA
+        class: DhEasy::Router::Test::ParserA
       - page_type: type_b
-        class: AeEasy::Router::Test::ParserB
+        class: DhEasy::Router::Test::ParserB
       - page_type: fake_type
         class: ABCDE
   seeder:
     routes:
-      - class: AeEasy::Router::Test::SeederA
-      - class: AeEasy::Router::Test::SeederB
+      - class: DhEasy::Router::Test::SeederA
+      - class: DhEasy::Router::Test::SeederB
       - class: GHIJK
 bbb: 222
