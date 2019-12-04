@@ -8,9 +8,13 @@
 DhEasy router is part of DhEasy gem collection. It provides an easy way to route execution to your classes, quite useful to allow TDD implementations with unit tests without the need for complex project folder structures.
 
 Install gem:
-```gem install 'dh_easy-router'```
+```ruby
+gem install 'dh_easy-router'
+```
 
 Require gem:
-```require 'dh_easy/router'```
+```ruby
+require 'dh_easy/router'
+```
 
 Documentation can be found [here](http://rubydoc.org/gems/dh_easy-router/frames).
