@@ -1,6 +1,7 @@
 $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
 require_relative './input/classes/parsers'
 require_relative './input/classes/seeders'
+require_relative './input/classes/finishers'
 $LOAD_PATH.unshift File.expand_path("./test/input", __FILE__)
 
 require 'simplecov'

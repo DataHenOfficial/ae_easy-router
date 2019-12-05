@@ -26,6 +26,12 @@ describe 'plugin router' do
             {'class' => 'DhEasy::Router::Test::SeederA'},
             {'class' => 'DhEasy::Router::Test::SeederB'}
           ]
+        },
+        'finisher' => {
+          'routes' => [
+            {'class' => 'DhEasy::Router::Test::FinisherA'},
+            {'class' => 'DhEasy::Router::Test::FinisherB'}
+          ]
         }
       },
       'bbb' => 222
